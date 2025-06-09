@@ -29,18 +29,13 @@ header {
 }
 
 header .container {
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 header .logo img {
-    width: 45px;
-    transform: rotate(0);
-    transition: 2s;
-}
-
-header .logo:hover img {
-    transform: rotate(360deg);
+    width: 150px;
+    filter: brightness(0) invert(1);
 }
 
 /* nav */
@@ -131,7 +126,7 @@ section{
 }
 
 .secao-sobre-mim{
-    background-color: #ffffff;
+    background-color: #efefef;
 }
 
 .secao-sobre-mim .sobre-mim{
@@ -214,6 +209,8 @@ section{
 
 .cards{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
 }
