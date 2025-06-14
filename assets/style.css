@@ -82,6 +82,8 @@ section{
     background-color: rgb(255, 255, 255);
 }
 
+/* BANNER INICIAL */
+
 .secao-inicial .banner-inicial{
     height: 100%;
     width: 100%;
@@ -124,6 +126,8 @@ section{
 .secao-inicial .info a img{
     width: 30px;
 }
+
+/* SECAO-SOBRE MIM */
 
 .secao-sobre-mim{
     background-color: #efefef;
@@ -177,7 +181,7 @@ section{
 }
 
 .banner-msg div{
-    width: 600px;
+
     text-align: center;
 }
 
@@ -186,6 +190,8 @@ section{
     font-size: 25px;
     color: #309198;
 }
+
+/* SECAO SERVICOS */
 
 .secao-servicos{
     display: flex;
@@ -325,6 +331,83 @@ section{
     padding: 40px;
 }
 
+/* SECAO LOCALIZAÇÃO */
+
+.secao-localizacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.secao-localizacao h2{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    font-weight: 500;
+    font-size: 30px;
+    color: #309198;
+}
+
+.localizacao{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.localizacao .contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.localizacao .contato h3{
+    font-size: 22px;
+    font-weight: 500;
+    color: #309198;
+}
+
+.localizacao .contato span{
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+    color: #54595ab7;
+    text-align: center;
+}
+
+.localizacao .contato .div-ctts{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 8px;
+    padding: 0 10px;
+}
+
+.localizacao .ctt{
+    display: flex;
+    gap: 5px;
+}
+
+.localizacao .ctt .insta{
+    display: flex;
+    gap: 5px;
+    text-decoration: none;
+    color: #169ba5;
+}
+
+.localizacao .ctt .insta:hover{
+    color: #195155;
+    text-decoration: underline;
+}
+
+.localizacao .ctt img{
+    width: 30px;
+    height: 30px;
+}
+
 footer{
     display: flex;
     flex-direction: column;
@@ -333,4 +416,70 @@ footer{
     padding: 10px;
     background-color: rgb(65, 139, 139);
     color: #fff;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 480px) {
+    #nav-bar ul{
+        display: none;
+    }
+
+    .secao-inicial .banner-inicial img{
+        display: none;
+    }
+
+    .secao-sobre-mim .sobre-mim{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secao-sobre-mim img{
+        width: 200px;
+    }
+
+    .secao-sobre-mim .info{
+        width: 100%;
+        gap: 20px;
+    }
+
+    .secao-sobre-mim .info div h2{
+        font-size: 20px;
+        color: #195155;
+    }
+
+    .secao-sobre-mim .info div p{
+        font-size: 20px;
+    }
+
+    .secao-sobre-mim .info p{
+        font-size: 14px;
+    }
+
+    .secao-sobre-mim .info div span{
+        font-size: 14px;
+    }
+
+    .banner-msg div p{
+        font-size: 15px;
+        padding: 0px 10px;   
+    }
+
+    .card{
+        width: 300px;
+    }
+
+    .localizacao{
+        flex-direction: column;
+    }
+
+    .maps iframe{
+        padding: 0px 10px;
+        width: 100%;
+        height: 80%;
+    }
+
+    footer{
+        font-size: 10px;
+    }
 }
