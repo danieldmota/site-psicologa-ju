@@ -283,10 +283,10 @@ section {
   position: relative;
 }
 
-.content p a{
-    text-decoration: none;
-    color: #309198;
-    font-weight: 500;
+.content p a {
+  text-decoration: none;
+  color: #309198;
+  font-weight: 500;
 }
 
 .content h3::before {
@@ -353,6 +353,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #f0eeee;
 }
 
 .secao-localizacao h2 {
@@ -433,9 +434,9 @@ footer {
   color: #fff;
 }
 
-footer a{
-    text-decoration: none;
-    color: #fff;
+footer a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* RESPONSIVIDADE */
@@ -542,8 +543,8 @@ footer a{
   }
 
   .localizacao {
-    display: flex;
-    gap: 0px;
+    flex-direction: column;
+    gap: 30px;
   }
 
   .contato {
@@ -554,8 +555,19 @@ footer a{
     font-size: 12px;
   }
 
+  .div-ctts {
+    gap: 5px;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
   .div-ctts .ctt {
     font-size: 12px;
+    width: 70%;
   }
 
   .div-ctts .ctt img {
