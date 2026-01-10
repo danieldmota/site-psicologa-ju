@@ -102,7 +102,7 @@ section {
 }
 
 .secao-inicial .banner-inicial img {
-  width: 300px;
+  width: 500px;
 }
 
 .secao-inicial .info {
@@ -151,7 +151,7 @@ section {
 }
 
 .secao-sobre-mim img {
-  width: 300px;
+  width: 400px;
 }
 
 .secao-sobre-mim .info {
@@ -506,7 +506,7 @@ footer a {
   }
 
   .secao-sobre-mim img {
-    width: 200px;
+    width: 300px;
   }
 
   .secao-sobre-mim .info {
