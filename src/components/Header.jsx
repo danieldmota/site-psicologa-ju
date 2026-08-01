@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logoUrl from "../../assets/images/logo-horizontal.png";
+import logoUrl from "../../assets/images/logo-horizontal-branca.png";
 import { navigationItems } from "../data/site";
 import { CloseIcon, MenuIcon } from "./Icons";
 import WhatsAppLink from "./WhatsAppLink";
