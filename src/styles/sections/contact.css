@@ -1,0 +1,131 @@
+/* Contact — kept from the approved direction */
+
+.contact {
+  padding-block: clamp(4.5rem, 11vw, 7.5rem);
+  background: var(--color-teal-950);
+  color: var(--color-white);
+}
+
+.contact-inner {
+  display: grid;
+  gap: clamp(2.75rem, 8vw, 5rem);
+}
+
+.contact .eyebrow {
+  color: var(--color-blue-mist);
+}
+
+.contact-copy h2 {
+  max-width: 11ch;
+  margin-top: 0.7rem;
+  color: var(--color-white);
+  font-size: clamp(2.65rem, 10vw, 4.6rem);
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+}
+
+.contact-lead {
+  max-width: 34rem;
+  margin-top: 1.1rem;
+  color: var(--color-mist);
+}
+
+.contact-copy > .button {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.contact-list {
+  display: grid;
+  margin-top: 2.25rem;
+  border-top: 1px solid rgb(255 255 255 / 0.22);
+}
+
+.contact-list a {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  align-items: start;
+  gap: 0.75rem;
+  padding-block: 1rem;
+  border-bottom: 1px solid rgb(255 255 255 / 0.22);
+  color: var(--color-white);
+  transition:
+    color 180ms var(--ease-out),
+    transform 180ms var(--ease-out);
+}
+
+.contact-list small {
+  display: block;
+  margin-bottom: 0.15rem;
+  color: var(--color-mist);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.contact-icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-top: 0.2rem;
+}
+
+.map-frame {
+  overflow: hidden;
+  align-self: start;
+  border: 0.4rem solid var(--color-paper);
+  border-radius: 0.75rem;
+  background: var(--color-paper);
+  box-shadow: 0 1.5rem 3rem rgb(4 35 37 / 0.24);
+}
+
+.map-frame iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 21rem;
+  aspect-ratio: 4 / 3;
+  border: 0;
+}
+
+.map-frame > a {
+  justify-content: space-between;
+  width: 100%;
+  min-height: 3.5rem;
+  padding-inline: 0.8rem;
+  color: var(--color-teal-950);
+}
+
+@media (hover: hover) {
+  .contact-list a:hover {
+    color: var(--color-blue-mist);
+    transform: translateX(0.25rem);
+  }
+}
+
+@media (min-width: 30rem) {
+  .contact-copy > .button {
+    width: fit-content;
+  }
+}
+
+@media (min-width: 56rem) {
+  .contact {
+    padding-block: clamp(4.75rem, 7vw, 6rem);
+  }
+
+  .contact-copy h2 {
+    max-width: 13ch;
+    font-size: clamp(2.8rem, 4vw, 3.4rem);
+    line-height: 1.12;
+  }
+
+  .contact-inner {
+    grid-template-columns: minmax(0, 0.85fr) minmax(28rem, 1.15fr);
+    align-items: center;
+  }
+
+  .map-frame iframe {
+    min-height: 28rem;
+  }
+}

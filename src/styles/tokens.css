@@ -1,0 +1,27 @@
+:root {
+  color-scheme: light;
+  font-family: "Poppins", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  --color-teal-950: #123f42;
+  --color-teal-800: #195155;
+  --color-teal-650: #276f73;
+  --color-teal-500: #418b8b;
+  --color-plum: #4b245d;
+  --color-paper: #fffdf9;
+  --color-surface: #f0f1ef;
+  --color-mist: #dce9e5;
+  --color-blue-mist: #c9e0ef;
+  --color-text: #303b3c;
+  --color-muted: #5c696a;
+  --color-line: #cad7d4;
+  --color-white: #fff;
+  --color-focus: #ffcc66;
+
+  --container: min(calc(100% - 2rem), 75rem);
+  --shadow-header: 0 0.4rem 1.5rem rgb(5 42 45 / 0.18);
+  --shadow-card: 0 0.75rem 2.2rem rgb(20 65 68 / 0.09);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-toggle: cubic-bezier(0.65, 0, 0.35, 1);
+}

@@ -1,0 +1,55 @@
+/* Message band */
+
+.manifesto {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding-block: clamp(3.5rem, 8vw, 5.5rem);
+  background: var(--color-blue-mist);
+}
+
+.manifesto-inner {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.manifesto-statement {
+  max-width: 27ch;
+  margin-top: 0.75rem;
+  color: var(--color-teal-800);
+  font-size: clamp(1.65rem, 6vw, 2.7rem);
+  font-weight: 500;
+  line-height: 1.28;
+}
+
+.manifesto-line {
+  position: absolute;
+  z-index: -1;
+  right: -12rem;
+  bottom: -4rem;
+  width: min(40rem, 95vw);
+  opacity: 0.24;
+  stroke: var(--color-teal-650);
+  stroke-linecap: round;
+  stroke-width: 1.1;
+}
+
+@media (min-width: 56rem) {
+  .manifesto {
+    padding-block: 3.25rem;
+  }
+
+  .manifesto-statement {
+    max-width: 40ch;
+    font-size: clamp(1.8rem, 2.5vw, 2.15rem);
+    line-height: 1.4;
+  }
+
+  .manifesto-line {
+    right: -4rem;
+    bottom: -5rem;
+    width: min(34rem, 42vw);
+  }
+}
